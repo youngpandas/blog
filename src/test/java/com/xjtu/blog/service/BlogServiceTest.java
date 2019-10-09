@@ -39,4 +39,11 @@ public class BlogServiceTest {
         System.out.println(blogs.getTotalPages());
         System.out.println(blogs.getTotalElements());
     }
+
+    @Test
+    public void getHotTop() {
+        for (Blog e : blogService.getHotBlog()) {
+            System.out.println(e);
+        }
+    }
 }
